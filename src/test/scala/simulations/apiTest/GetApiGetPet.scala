@@ -6,15 +6,13 @@ import io.gatling.core.Predef._
 import io.gatling.core.structure.ScenarioBuilder
 import io.gatling.http.protocol.HttpProtocolBuilder
 
-class PostApiCreatePet extends Simulation{
+class GetApiGetPet extends  Simulation{
 
   val httpProtocol : HttpProtocolBuilder = http.baseUrl("https://petstore.swagger.io")
 
-  val scn : ScenarioBuilder = scenario(name="Create pet")
-    .exec(http(requestName = "Post request to create a new pet")
-    .post("/v2/pet")
-
-    .body(RawFileBody("TestData/createPet.json")).asJson)
+  val scn : ScenarioBuilder = scenario("Get Pet")
+    .exec(http(requestName = "Get the pet by id")
+    .get("/v2/pet/18912"))
 
   setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 

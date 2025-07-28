@@ -1,0 +1,18 @@
+{
+  "id": 18912,
+  "name": "dogeshGuru",
+  "category": {
+    "id": 1,
+    "name": "Dogesh Don"
+  },
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
