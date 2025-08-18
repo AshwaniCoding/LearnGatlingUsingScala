@@ -81,6 +81,7 @@
 <!--            <exclude>simulations.injection.FixedDurationTimeTest</exclude>-->
 <!--          </excludes>-->
           <!-- Enterprise Cloud (https://cloud.gatling.io/) configuration reference: https://docs.gatling.io/reference/integrations/build-tools/maven-plugin/ -->
+          <apiToken>rrCLpHw9EQ4ljq_eF0l1UpFR9CW.HhpxAG5B8YAUHPT6kDBR3EETI.rOS24Ry_awM</apiToken>
         </configuration>
       </plugin>
     </plugins>
